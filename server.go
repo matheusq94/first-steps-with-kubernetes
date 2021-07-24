@@ -35,7 +35,7 @@ func ConfigMap(w http.ResponseWriter, r *http.Request) {
 	data, err := ioutil.ReadFile("/go/myfamily/family.txt")
 
 	if err != nil {
-		log.Fatalf("Error reading file: ", err)
+		log.Fatalf("Error reading file.: ", err)
 	}
 
 	fmt.Fprintf(w, "My Family members: %s.", string(data))
