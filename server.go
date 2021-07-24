@@ -38,7 +38,7 @@ func ConfigMap(w http.ResponseWriter, r *http.Request) {
 		log.Fatalf("Error reading file: ", err)
 	}
 
-	fmt.Fprintf(w, "My Family: %s.", string(data))
+	fmt.Fprintf(w, "My Family members: %s.", string(data))
 }
 
 func Secret(w http.ResponseWriter, r *http.Request) {
